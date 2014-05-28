@@ -8,7 +8,7 @@
 
 #import "JSAppDelegate.h"
 #import "JSViewController.h"
-#import "JSViewModel.h"
+#import "JSViewModelImpl.h"
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
 

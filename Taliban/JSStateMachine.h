@@ -10,9 +10,11 @@
 
 @class RACSignal;
 
-@interface JSStateMachine : NSObject
-@property (readonly) RACSignal *statesSignal;
-@property (readonly) RACSignal *transitionErrorsSignal;
+@protocol JSStateMachine <NSObject>
+- (RACSignal *)statesSignal;
+- (RACSignal *)transitionErrorsSignal;
+@end
 
+@interface JSStateMachine : NSObject <JSStateMachine>
 - (id)initWithTransformations:(RACSignal *)transformations initialState:(id)initialState;
 @end

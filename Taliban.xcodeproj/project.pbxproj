@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		CDCFB76B56FE413B922B453D /* libPods-Taliban.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9E43D624534A78AFCA0091 /* libPods-Taliban.a */; };
-		FC07E42F193688260091F455 /* JSViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC07E42E193688260091F455 /* JSViewModel.m */; };
+		FC07E42F193688260091F455 /* JSViewModelImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = FC07E42E193688260091F455 /* JSViewModelImpl.m */; };
 		FC07E432193688EB0091F455 /* JSViewState.m in Sources */ = {isa = PBXBuildFile; fileRef = FC07E431193688EB0091F455 /* JSViewState.m */; };
 		FC07E435193689A40091F455 /* JSCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC07E434193689A40091F455 /* JSCoordinate.m */; };
 		FC07E43B1936912D0091F455 /* RACSignal+JSOperators.m in Sources */ = {isa = PBXBuildFile; fileRef = FC07E43A1936912D0091F455 /* RACSignal+JSOperators.m */; };
 		FC07E443193698E50091F455 /* JSViewStateImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = FC07E442193698E50091F455 /* JSViewStateImpl.m */; };
 		FC07E4471936A3280091F455 /* JSStateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = FC07E4461936A3280091F455 /* JSStateMachine.m */; };
+		FC07E44A1936A8A00091F455 /* JSViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC07E4491936A8A00091F455 /* JSViewModel.m */; };
 		FC86340E193683B9001A3CDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC86340D193683B9001A3CDE /* Foundation.framework */; };
 		FC863410193683B9001A3CDE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC86340F193683B9001A3CDE /* CoreGraphics.framework */; };
 		FC863412193683B9001A3CDE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC863411193683B9001A3CDE /* UIKit.framework */; };
@@ -42,8 +43,8 @@
 /* Begin PBXFileReference section */
 		3C9E43D624534A78AFCA0091 /* libPods-Taliban.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Taliban.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B545E0E1F3024D45A683C56E /* Pods-Taliban.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taliban.xcconfig"; path = "Pods/Pods-Taliban.xcconfig"; sourceTree = "<group>"; };
-		FC07E42D193688260091F455 /* JSViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSViewModel.h; sourceTree = "<group>"; };
-		FC07E42E193688260091F455 /* JSViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSViewModel.m; sourceTree = "<group>"; };
+		FC07E42D193688260091F455 /* JSViewModelImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSViewModelImpl.h; sourceTree = "<group>"; };
+		FC07E42E193688260091F455 /* JSViewModelImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSViewModelImpl.m; sourceTree = "<group>"; };
 		FC07E430193688EB0091F455 /* JSViewState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSViewState.h; sourceTree = "<group>"; };
 		FC07E431193688EB0091F455 /* JSViewState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSViewState.m; sourceTree = "<group>"; };
 		FC07E433193689A40091F455 /* JSCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCoordinate.h; sourceTree = "<group>"; };
@@ -54,6 +55,8 @@
 		FC07E442193698E50091F455 /* JSViewStateImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSViewStateImpl.m; sourceTree = "<group>"; };
 		FC07E4451936A3280091F455 /* JSStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSStateMachine.h; sourceTree = "<group>"; };
 		FC07E4461936A3280091F455 /* JSStateMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSStateMachine.m; sourceTree = "<group>"; };
+		FC07E4481936A8A00091F455 /* JSViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSViewModel.h; sourceTree = "<group>"; };
+		FC07E4491936A8A00091F455 /* JSViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSViewModel.m; sourceTree = "<group>"; };
 		FC86340A193683B9001A3CDE /* Taliban.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taliban.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC86340D193683B9001A3CDE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FC86340F193683B9001A3CDE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -103,30 +106,30 @@
 			isa = PBXGroup;
 			children = (
 				FC07E4441936999A0091F455 /* Signatures */,
-				FC07E440193698CB0091F455 /* View Model */,
-				FC07E43C193698780091F455 /* View Controller */,
+				FC07E440193698CB0091F455 /* Concrete View Model */,
+				FC07E43C193698780091F455 /* Concrete View Controller */,
 			);
 			name = TicTacToe;
 			sourceTree = "<group>";
 		};
-		FC07E43C193698780091F455 /* View Controller */ = {
+		FC07E43C193698780091F455 /* Concrete View Controller */ = {
 			isa = PBXGroup;
 			children = (
 				FC863425193683B9001A3CDE /* JSViewController.h */,
 				FC863426193683B9001A3CDE /* JSViewController.m */,
 			);
-			name = "View Controller";
+			name = "Concrete View Controller";
 			sourceTree = "<group>";
 		};
-		FC07E440193698CB0091F455 /* View Model */ = {
+		FC07E440193698CB0091F455 /* Concrete View Model */ = {
 			isa = PBXGroup;
 			children = (
-				FC07E42D193688260091F455 /* JSViewModel.h */,
-				FC07E42E193688260091F455 /* JSViewModel.m */,
+				FC07E42D193688260091F455 /* JSViewModelImpl.h */,
+				FC07E42E193688260091F455 /* JSViewModelImpl.m */,
 				FC07E441193698E50091F455 /* JSViewStateImpl.h */,
 				FC07E442193698E50091F455 /* JSViewStateImpl.m */,
 			);
-			name = "View Model";
+			name = "Concrete View Model";
 			sourceTree = "<group>";
 		};
 		FC07E4441936999A0091F455 /* Signatures */ = {
@@ -136,6 +139,8 @@
 				FC07E431193688EB0091F455 /* JSViewState.m */,
 				FC07E433193689A40091F455 /* JSCoordinate.h */,
 				FC07E434193689A40091F455 /* JSCoordinate.m */,
+				FC07E4481936A8A00091F455 /* JSViewModel.h */,
+				FC07E4491936A8A00091F455 /* JSViewModel.m */,
 			);
 			name = Signatures;
 			sourceTree = "<group>";
@@ -351,11 +356,12 @@
 			files = (
 				FC86341A193683B9001A3CDE /* main.m in Sources */,
 				FC07E43B1936912D0091F455 /* RACSignal+JSOperators.m in Sources */,
-				FC07E42F193688260091F455 /* JSViewModel.m in Sources */,
+				FC07E42F193688260091F455 /* JSViewModelImpl.m in Sources */,
 				FC863427193683B9001A3CDE /* JSViewController.m in Sources */,
 				FC07E443193698E50091F455 /* JSViewStateImpl.m in Sources */,
 				FC86341E193683B9001A3CDE /* JSAppDelegate.m in Sources */,
 				FC07E435193689A40091F455 /* JSCoordinate.m in Sources */,
+				FC07E44A1936A8A00091F455 /* JSViewModel.m in Sources */,
 				FC07E4471936A3280091F455 /* JSStateMachine.m in Sources */,
 				FC07E432193688EB0091F455 /* JSViewState.m in Sources */,
 			);

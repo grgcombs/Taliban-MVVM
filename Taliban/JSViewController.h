@@ -8,9 +8,9 @@
 
 @import UIKit.UIViewController;
 
-@class JSViewModel;
+@protocol JSViewModel;
 
 @interface JSViewController : UIViewController
-@property (readonly) JSViewModel *viewModel;
-- (id)initWithViewModel:(JSViewModel *)viewModel;
+@property (readonly) id<JSViewModel> viewModel;
+- (id)initWithViewModel:(id<JSViewModel>)viewModel;
 @end

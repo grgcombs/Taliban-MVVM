@@ -26,10 +26,10 @@
 
 @implementation JSViewController
 
-- (id)initWithViewModel:(JSViewModel *)viewModel {
+- (id)initWithViewModel:(id<JSViewModel>)viewModel {
     if (self = [super init]) {
         _viewModel = viewModel;
-        RAC(self, currentState) = self.viewModel.stateMachine.statesSignal;
+        RAC(self, currentState) = self.viewModel.statesSignal;
     }
 
     return self;
@@ -68,7 +68,7 @@
         }
     }
 
-    [self.viewModel.stateMachine.transitionErrorsSignal subscribeNext:^(NSError *error) {
+    [self.viewModel.transitionErrorsSignal subscribeNext:^(NSError *error) {
         [[[UIAlertView alloc] initWithTitle:@"Error!" message:@"Whoops" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
     }];
 

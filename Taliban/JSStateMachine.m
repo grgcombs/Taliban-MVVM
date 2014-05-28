@@ -13,6 +13,11 @@
 #import <ReactiveCocoa/RACSignal+Operations.h>
 #import "RACSignal+JSOperators.h"
 
+@interface JSStateMachine ()
+@property (readonly) RACSignal *statesSignal;
+@property (readonly) RACSignal *transitionErrorsSignal;
+@end
+
 @implementation JSStateMachine
 
 - (id)initWithTransformations:(RACSignal *)transformations initialState:(id)initialState {

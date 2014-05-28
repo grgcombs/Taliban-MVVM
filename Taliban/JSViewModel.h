@@ -6,21 +6,14 @@
 //  Copyright (c) 2014 JS. All rights reserved.
 //
 
-@import Foundation.NSObject;
+#import "JSStateMachine.h"
 
 @class RACAction, RACSignal;
-@class JSStateMachine, JSCoordinate;
-@protocol JSViewState;
 
-@interface JSViewModel : NSObject
-
+@protocol JSViewModel <JSStateMachine>
 /// playCoordinateAction : RACAction <JSCoordinate> _
 @property (readonly) RACAction *playCoordinateAction;
 
-/// stateMachine : JSStateMachine <JSViewState>
-@property (readonly) JSStateMachine *stateMachine;
-
 /// victoriesSignal : RACSignal RACPlayer
 @property (readonly) RACSignal *victoriesSignal;
-
 @end
