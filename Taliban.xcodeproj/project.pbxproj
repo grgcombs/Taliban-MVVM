@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDCFB76B56FE413B922B453D /* libPods-Taliban.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9E43D624534A78AFCA0091 /* libPods-Taliban.a */; };
+		FC07E42F193688260091F455 /* JSViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC07E42E193688260091F455 /* JSViewModel.m */; };
+		FC07E432193688EB0091F455 /* JSViewState.m in Sources */ = {isa = PBXBuildFile; fileRef = FC07E431193688EB0091F455 /* JSViewState.m */; };
+		FC07E435193689A40091F455 /* JSCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC07E434193689A40091F455 /* JSCoordinate.m */; };
+		FC07E43B1936912D0091F455 /* RACSignal+JSOperators.m in Sources */ = {isa = PBXBuildFile; fileRef = FC07E43A1936912D0091F455 /* RACSignal+JSOperators.m */; };
+		FC07E443193698E50091F455 /* JSViewStateImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = FC07E442193698E50091F455 /* JSViewStateImpl.m */; };
+		FC07E4471936A3280091F455 /* JSStateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = FC07E4461936A3280091F455 /* JSStateMachine.m */; };
+		FC86340E193683B9001A3CDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC86340D193683B9001A3CDE /* Foundation.framework */; };
+		FC863410193683B9001A3CDE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC86340F193683B9001A3CDE /* CoreGraphics.framework */; };
+		FC863412193683B9001A3CDE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC863411193683B9001A3CDE /* UIKit.framework */; };
+		FC863418193683B9001A3CDE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC863416193683B9001A3CDE /* InfoPlist.strings */; };
+		FC86341A193683B9001A3CDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC863419193683B9001A3CDE /* main.m */; };
+		FC86341E193683B9001A3CDE /* JSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86341D193683B9001A3CDE /* JSAppDelegate.m */; };
+		FC863427193683B9001A3CDE /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC863426193683B9001A3CDE /* JSViewController.m */; };
+		FC863429193683B9001A3CDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC863428193683B9001A3CDE /* Images.xcassets */; };
+		FC863430193683B9001A3CDE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC86342F193683B9001A3CDE /* XCTest.framework */; };
+		FC863431193683B9001A3CDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC86340D193683B9001A3CDE /* Foundation.framework */; };
+		FC863432193683B9001A3CDE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC863411193683B9001A3CDE /* UIKit.framework */; };
+		FC86343A193683B9001A3CDE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC863438193683B9001A3CDE /* InfoPlist.strings */; };
+		FC86343C193683B9001A3CDE /* TalibanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86343B193683B9001A3CDE /* TalibanTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC863433193683B9001A3CDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC863402193683B9001A3CDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC863409193683B9001A3CDE;
+			remoteInfo = Taliban;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C9E43D624534A78AFCA0091 /* libPods-Taliban.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Taliban.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B545E0E1F3024D45A683C56E /* Pods-Taliban.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taliban.xcconfig"; path = "Pods/Pods-Taliban.xcconfig"; sourceTree = "<group>"; };
+		FC07E42D193688260091F455 /* JSViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSViewModel.h; sourceTree = "<group>"; };
+		FC07E42E193688260091F455 /* JSViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSViewModel.m; sourceTree = "<group>"; };
+		FC07E430193688EB0091F455 /* JSViewState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSViewState.h; sourceTree = "<group>"; };
+		FC07E431193688EB0091F455 /* JSViewState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSViewState.m; sourceTree = "<group>"; };
+		FC07E433193689A40091F455 /* JSCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCoordinate.h; sourceTree = "<group>"; };
+		FC07E434193689A40091F455 /* JSCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCoordinate.m; sourceTree = "<group>"; };
+		FC07E4391936912D0091F455 /* RACSignal+JSOperators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+JSOperators.h"; sourceTree = "<group>"; };
+		FC07E43A1936912D0091F455 /* RACSignal+JSOperators.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+JSOperators.m"; sourceTree = "<group>"; };
+		FC07E441193698E50091F455 /* JSViewStateImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSViewStateImpl.h; sourceTree = "<group>"; };
+		FC07E442193698E50091F455 /* JSViewStateImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSViewStateImpl.m; sourceTree = "<group>"; };
+		FC07E4451936A3280091F455 /* JSStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSStateMachine.h; sourceTree = "<group>"; };
+		FC07E4461936A3280091F455 /* JSStateMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSStateMachine.m; sourceTree = "<group>"; };
+		FC86340A193683B9001A3CDE /* Taliban.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taliban.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC86340D193683B9001A3CDE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FC86340F193683B9001A3CDE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FC863411193683B9001A3CDE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FC863415193683B9001A3CDE /* Taliban-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Taliban-Info.plist"; sourceTree = "<group>"; };
+		FC863417193683B9001A3CDE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FC863419193683B9001A3CDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC86341B193683B9001A3CDE /* Taliban-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Taliban-Prefix.pch"; sourceTree = "<group>"; };
+		FC86341C193683B9001A3CDE /* JSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSAppDelegate.h; sourceTree = "<group>"; };
+		FC86341D193683B9001A3CDE /* JSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSAppDelegate.m; sourceTree = "<group>"; };
+		FC863425193683B9001A3CDE /* JSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSViewController.h; sourceTree = "<group>"; };
+		FC863426193683B9001A3CDE /* JSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSViewController.m; sourceTree = "<group>"; };
+		FC863428193683B9001A3CDE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FC86342E193683B9001A3CDE /* TalibanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalibanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC86342F193683B9001A3CDE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FC863437193683B9001A3CDE /* TalibanTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TalibanTests-Info.plist"; sourceTree = "<group>"; };
+		FC863439193683B9001A3CDE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FC86343B193683B9001A3CDE /* TalibanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TalibanTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC863407193683B9001A3CDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC863410193683B9001A3CDE /* CoreGraphics.framework in Frameworks */,
+				FC863412193683B9001A3CDE /* UIKit.framework in Frameworks */,
+				FC86340E193683B9001A3CDE /* Foundation.framework in Frameworks */,
+				CDCFB76B56FE413B922B453D /* libPods-Taliban.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC86342B193683B9001A3CDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC863430193683B9001A3CDE /* XCTest.framework in Frameworks */,
+				FC863432193683B9001A3CDE /* UIKit.framework in Frameworks */,
+				FC863431193683B9001A3CDE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC07E42C1936881B0091F455 /* TicTacToe */ = {
+			isa = PBXGroup;
+			children = (
+				FC07E4441936999A0091F455 /* Signatures */,
+				FC07E440193698CB0091F455 /* View Model */,
+				FC07E43C193698780091F455 /* View Controller */,
+			);
+			name = TicTacToe;
+			sourceTree = "<group>";
+		};
+		FC07E43C193698780091F455 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC863425193683B9001A3CDE /* JSViewController.h */,
+				FC863426193683B9001A3CDE /* JSViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		FC07E440193698CB0091F455 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC07E42D193688260091F455 /* JSViewModel.h */,
+				FC07E42E193688260091F455 /* JSViewModel.m */,
+				FC07E441193698E50091F455 /* JSViewStateImpl.h */,
+				FC07E442193698E50091F455 /* JSViewStateImpl.m */,
+			);
+			name = "View Model";
+			sourceTree = "<group>";
+		};
+		FC07E4441936999A0091F455 /* Signatures */ = {
+			isa = PBXGroup;
+			children = (
+				FC07E430193688EB0091F455 /* JSViewState.h */,
+				FC07E431193688EB0091F455 /* JSViewState.m */,
+				FC07E433193689A40091F455 /* JSCoordinate.h */,
+				FC07E434193689A40091F455 /* JSCoordinate.m */,
+			);
+			name = Signatures;
+			sourceTree = "<group>";
+		};
+		FC863401193683B9001A3CDE = {
+			isa = PBXGroup;
+			children = (
+				FC863413193683B9001A3CDE /* Taliban */,
+				FC863435193683B9001A3CDE /* TalibanTests */,
+				FC86340C193683B9001A3CDE /* Frameworks */,
+				FC86340B193683B9001A3CDE /* Products */,
+				B545E0E1F3024D45A683C56E /* Pods-Taliban.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		FC86340B193683B9001A3CDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC86340A193683B9001A3CDE /* Taliban.app */,
+				FC86342E193683B9001A3CDE /* TalibanTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC86340C193683B9001A3CDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC86340D193683B9001A3CDE /* Foundation.framework */,
+				FC86340F193683B9001A3CDE /* CoreGraphics.framework */,
+				FC863411193683B9001A3CDE /* UIKit.framework */,
+				FC86342F193683B9001A3CDE /* XCTest.framework */,
+				3C9E43D624534A78AFCA0091 /* libPods-Taliban.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC863413193683B9001A3CDE /* Taliban */ = {
+			isa = PBXGroup;
+			children = (
+				FC86341C193683B9001A3CDE /* JSAppDelegate.h */,
+				FC86341D193683B9001A3CDE /* JSAppDelegate.m */,
+				FC07E4451936A3280091F455 /* JSStateMachine.h */,
+				FC07E4461936A3280091F455 /* JSStateMachine.m */,
+				FC07E42C1936881B0091F455 /* TicTacToe */,
+				FC863428193683B9001A3CDE /* Images.xcassets */,
+				FC863414193683B9001A3CDE /* Supporting Files */,
+				FC07E4391936912D0091F455 /* RACSignal+JSOperators.h */,
+				FC07E43A1936912D0091F455 /* RACSignal+JSOperators.m */,
+			);
+			path = Taliban;
+			sourceTree = "<group>";
+		};
+		FC863414193683B9001A3CDE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC863415193683B9001A3CDE /* Taliban-Info.plist */,
+				FC863416193683B9001A3CDE /* InfoPlist.strings */,
+				FC863419193683B9001A3CDE /* main.m */,
+				FC86341B193683B9001A3CDE /* Taliban-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC863435193683B9001A3CDE /* TalibanTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC86343B193683B9001A3CDE /* TalibanTests.m */,
+				FC863436193683B9001A3CDE /* Supporting Files */,
+			);
+			path = TalibanTests;
+			sourceTree = "<group>";
+		};
+		FC863436193683B9001A3CDE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC863437193683B9001A3CDE /* TalibanTests-Info.plist */,
+				FC863438193683B9001A3CDE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC863409193683B9001A3CDE /* Taliban */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC86343F193683B9001A3CDE /* Build configuration list for PBXNativeTarget "Taliban" */;
+			buildPhases = (
+				76E3B95500E3495C841C7F16 /* Check Pods Manifest.lock */,
+				FC863406193683B9001A3CDE /* Sources */,
+				FC863407193683B9001A3CDE /* Frameworks */,
+				FC863408193683B9001A3CDE /* Resources */,
+				F382398B28834476ADDEB741 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Taliban;
+			productName = Taliban;
+			productReference = FC86340A193683B9001A3CDE /* Taliban.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC86342D193683B9001A3CDE /* TalibanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC863442193683B9001A3CDE /* Build configuration list for PBXNativeTarget "TalibanTests" */;
+			buildPhases = (
+				FC86342A193683B9001A3CDE /* Sources */,
+				FC86342B193683B9001A3CDE /* Frameworks */,
+				FC86342C193683B9001A3CDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC863434193683B9001A3CDE /* PBXTargetDependency */,
+			);
+			name = TalibanTests;
+			productName = TalibanTests;
+			productReference = FC86342E193683B9001A3CDE /* TalibanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC863402193683B9001A3CDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = JS;
+				TargetAttributes = {
+					FC86342D193683B9001A3CDE = {
+						TestTargetID = FC863409193683B9001A3CDE;
+					};
+				};
+			};
+			buildConfigurationList = FC863405193683B9001A3CDE /* Build configuration list for PBXProject "Taliban" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC863401193683B9001A3CDE;
+			productRefGroup = FC86340B193683B9001A3CDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC863409193683B9001A3CDE /* Taliban */,
+				FC86342D193683B9001A3CDE /* TalibanTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC863408193683B9001A3CDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC863429193683B9001A3CDE /* Images.xcassets in Resources */,
+				FC863418193683B9001A3CDE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC86342C193683B9001A3CDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC86343A193683B9001A3CDE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76E3B95500E3495C841C7F16 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F382398B28834476ADDEB741 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Taliban-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC863406193683B9001A3CDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC86341A193683B9001A3CDE /* main.m in Sources */,
+				FC07E43B1936912D0091F455 /* RACSignal+JSOperators.m in Sources */,
+				FC07E42F193688260091F455 /* JSViewModel.m in Sources */,
+				FC863427193683B9001A3CDE /* JSViewController.m in Sources */,
+				FC07E443193698E50091F455 /* JSViewStateImpl.m in Sources */,
+				FC86341E193683B9001A3CDE /* JSAppDelegate.m in Sources */,
+				FC07E435193689A40091F455 /* JSCoordinate.m in Sources */,
+				FC07E4471936A3280091F455 /* JSStateMachine.m in Sources */,
+				FC07E432193688EB0091F455 /* JSViewState.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC86342A193683B9001A3CDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC86343C193683B9001A3CDE /* TalibanTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC863434193683B9001A3CDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC863409193683B9001A3CDE /* Taliban */;
+			targetProxy = FC863433193683B9001A3CDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC863416193683B9001A3CDE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC863417193683B9001A3CDE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FC863438193683B9001A3CDE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC863439193683B9001A3CDE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC86343D193683B9001A3CDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC86343E193683B9001A3CDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC863440193683B9001A3CDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B545E0E1F3024D45A683C56E /* Pods-Taliban.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Taliban/Taliban-Prefix.pch";
+				INFOPLIST_FILE = "Taliban/Taliban-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FC863441193683B9001A3CDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B545E0E1F3024D45A683C56E /* Pods-Taliban.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Taliban/Taliban-Prefix.pch";
+				INFOPLIST_FILE = "Taliban/Taliban-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FC863443193683B9001A3CDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Taliban.app/Taliban";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Taliban/Taliban-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TalibanTests/TalibanTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FC863444193683B9001A3CDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Taliban.app/Taliban";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Taliban/Taliban-Prefix.pch";
+				INFOPLIST_FILE = "TalibanTests/TalibanTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC863405193683B9001A3CDE /* Build configuration list for PBXProject "Taliban" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC86343D193683B9001A3CDE /* Debug */,
+				FC86343E193683B9001A3CDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC86343F193683B9001A3CDE /* Build configuration list for PBXNativeTarget "Taliban" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC863440193683B9001A3CDE /* Debug */,
+				FC863441193683B9001A3CDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC863442193683B9001A3CDE /* Build configuration list for PBXNativeTarget "TalibanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC863443193683B9001A3CDE /* Debug */,
+				FC863444193683B9001A3CDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC863402193683B9001A3CDE /* Project object */;
+}

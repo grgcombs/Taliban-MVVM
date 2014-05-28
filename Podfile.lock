@@ -1,0 +1,19 @@
+PODS:
+  - ReactiveCocoa (3.0-dev):
+    - ReactiveCocoa/Core
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/Core (3.0-dev):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (3.0-dev)
+
+DEPENDENCIES:
+  - ReactiveCocoa (from `ReactiveCocoa.podspec`)
+
+EXTERNAL SOURCES:
+  ReactiveCocoa:
+    :podspec: ReactiveCocoa.podspec
+
+SPEC CHECKSUMS:
+  ReactiveCocoa: 9b8ede3d7b4eaccdf00b9862f0f356a2aa8b8b52
+
+COCOAPODS: 0.32.1
