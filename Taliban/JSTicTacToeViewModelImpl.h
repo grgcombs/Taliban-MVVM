@@ -1,5 +1,5 @@
 //
-//  JSViewModel.h
+//  JSTicTacToeViewModelImpl.h
 //  Taliban
 //
 //  Created by Jonathan Sterling on 5/28/14.
@@ -8,7 +8,7 @@
 
 @import Foundation.NSObject;
 
-#import "JSViewModel.h"
+#import "JSTicTacToeViewModel.h"
 
-@interface JSViewModel : NSObject <JSViewModel>
+@interface JSTicTacToeViewModel : NSObject <JSTicTacToeViewModel>
 @end

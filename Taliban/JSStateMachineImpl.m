@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 JS. All rights reserved.
 //
 
-#import "JSStateMachine.h"
+#import "JSStateMachineImpl.h"
 
 #import <ReactiveCocoa/RACSubject.h>
 #import <ReactiveCocoa/RACScheduler.h>

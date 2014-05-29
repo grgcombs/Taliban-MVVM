@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 JS. All rights reserved.
 //
 
-#import "JSViewController.h"
-#import "JSViewModel.h"
-#import "JSViewState.h"
-#import "JSCoordinate.h"
+#import "JSTicTacToeViewController.h"
+#import "JSTicTacToeViewModel.h"
+#import "JSTicTacToeState.h"
+#import "JSTile.h"
 #import "JSStateMachine.h"
 
 #import <ReactiveCocoa/RACSignal.h>
@@ -20,13 +20,24 @@
 
 @import UIKit.UIButton;
 
-@interface JSViewController ()
-@property id<JSViewState> currentState;
+@interface JSTicTacToeViewController ()
+@property id<JSTicTacToeState> currentState;
 @end
 
-@implementation JSViewController
+static inline UIColor *JSColorForPlayer(JSPlayer player) {
+    switch (player) {
+        case JSPlayerNone:
+            return [UIColor grayColor];
+        case JSPlayerComputer:
+            return [UIColor blackColor];
+        case JSPlayerHuman:
+            return [UIColor redColor];
+    }
+}
 
-- (id)initWithViewModel:(id<JSViewModel>)viewModel {
+@implementation JSTicTacToeViewController
+
+- (id)initWithViewModel:(id<JSTicTacToeViewModel>)viewModel {
     if (self = [super init]) {
         _viewModel = viewModel;
         RAC(self, currentState) = self.viewModel.statesSignal;
@@ -40,31 +51,19 @@
 
     self.view.backgroundColor = [UIColor whiteColor];
 
-    static CGFloat kButtonWidth = 100.f;
-    static CGFloat kButtonHeight = 100.f;
-
+    static CGSize const kTileSize = { 100.f, 100.f };
     for (NSInteger x = 0; x < 3; x++) {
         for (NSInteger y = 0; y < 3; y++) {
             UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-            button.frame = CGRectMake(x * (kButtonWidth + 10), y * (kButtonHeight + 10) + 20.f, kButtonWidth, kButtonHeight);
+            button.frame = CGRectMake(x * (kTileSize.width + 10), y * (kTileSize.height + 10) + 20.f, kTileSize.width, kTileSize.height);
             [self.view addSubview:button];
 
-            JSCoordinate *coordinate = [JSCoordinate row:x column:y];
-            [RACObserve(self, currentState) subscribeNext:^(id<JSViewState> state) {
-                switch ([state playerAtCoordinate:coordinate]) {
-                    case JSPlayerNone:
-                        [button setBackgroundColor:[UIColor grayColor]];
-                        break;
-                    case JSPlayerComputer:
-                        [button setBackgroundColor:[UIColor blackColor]];
-                        break;
-                    default:
-                        [button setBackgroundColor:[UIColor redColor]];
-                        break;
-                }
+            JSTile *tile = [JSTile row:x column:y];
+            [RACObserve(self, currentState) subscribeNext:^(id<JSTicTacToeState> state) {
+                button.backgroundColor = JSColorForPlayer([state playerAtTile:tile]);
             }];
 
-            button.rac_action = [[RACSignal return:coordinate].signalGenerator postcompose:self.viewModel.playCoordinateAction].action;
+            button.rac_action = [[RACSignal return:tile].signalGenerator postcompose:self.viewModel.playTileAction].action;
         }
     }
 

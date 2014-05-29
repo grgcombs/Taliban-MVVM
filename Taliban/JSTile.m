@@ -1,17 +1,17 @@
 //
-//  JSCoordinate.m
+//  JSTile.m
 //  Taliban
 //
 //  Created by Jonathan Sterling on 5/28/14.
 //  Copyright (c) 2014 JS. All rights reserved.
 //
 
-#import "JSCoordinate.h"
+#import "JSTile.h"
 #import <ReactiveCocoa/RACSignal+Operations.h>
 
-NSString *const JSCoordinateErrorDomain = @"JSCoordinateErrorDomain";
+NSString *const JSTileErrorDomain = @"JSTileErrorDomain";
 
-@implementation JSCoordinate
+@implementation JSTile
 
 - (id)initWithRow:(NSUInteger)horizontal column:(NSUInteger)vertical {
     if (self = [super init]) {
@@ -30,17 +30,17 @@ NSString *const JSCoordinateErrorDomain = @"JSCoordinateErrorDomain";
     return [[self alloc] initWithRow:x column:y];
 }
 
-- (RACSignal *)validatedCoordinate {
+- (RACSignal *)validatedTile {
     return [RACSignal defer:^RACSignal *{
         if (self.row > 2 || self.row > 2)
-            return [RACSignal error:[NSError errorWithDomain:JSCoordinateErrorDomain code:0 userInfo:nil]];
+            return [RACSignal error:[NSError errorWithDomain:JSTileErrorDomain code:0 userInfo:nil]];
 
         return [RACSignal return:self];
     }];
 }
 
-- (BOOL)isEqual:(JSCoordinate *)object {
-    if (![object isKindOfClass:[JSCoordinate class]]) {
+- (BOOL)isEqual:(JSTile *)object {
+    if (![object isKindOfClass:[JSTile class]]) {
         return NO;
     }
 

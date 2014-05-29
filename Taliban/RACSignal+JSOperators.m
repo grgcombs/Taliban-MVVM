@@ -10,8 +10,7 @@
 
 @implementation RACSignal (JSOperators)
 
-- (instancetype)js_scanWithStart:(id)startingValue flattenReduce:(RACSignal *(^)(id running, id next))block
-{
+- (instancetype)js_scanWithStart:(id)startingValue flattenReduce:(RACSignal *(^)(id running, id next))block {
     NSCParameterAssert(block != nil);
 
     return [self bind:^{
@@ -22,6 +21,16 @@
                 running = innerValue;
                 return innerValue;
             }];
+        };
+    }];
+}
+
+- (instancetype)js_mapCurried:(id (^)(id, id))block {
+    NSCParameterAssert(block != nil);
+
+    return [self map:^id(id x) {
+        return ^(id y) {
+            return block(x, y);
         };
     }];
 }

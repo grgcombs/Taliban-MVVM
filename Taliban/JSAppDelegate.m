@@ -7,8 +7,8 @@
 //
 
 #import "JSAppDelegate.h"
-#import "JSViewController.h"
-#import "JSViewModelImpl.h"
+#import "JSTicTacToeViewController.h"
+#import "JSTicTacToeViewModelImpl.h"
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
@@ -17,7 +17,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
-    self.window.rootViewController = [[JSViewController alloc] initWithViewModel:[JSViewModel new]];
+    self.window.rootViewController = [[JSTicTacToeViewController alloc] initWithViewModel:[JSTicTacToeViewModel new]];
     [self.window makeKeyAndVisible];
     return YES;
 }

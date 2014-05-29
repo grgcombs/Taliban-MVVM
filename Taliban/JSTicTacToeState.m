@@ -1,14 +1,14 @@
 //
-//  JSViewState.m
+//  JSTicTacToeState.m
 //  Taliban
 //
 //  Created by Jonathan Sterling on 5/28/14.
 //  Copyright (c) 2014 JS. All rights reserved.
 //
 
-#import "JSViewState.h"
+#import "JSTicTacToeState.h"
 
-NSString *const JSViewStateErrorDomain = @"JSViewStateErrorDomain";
+NSString *const JSTicTacToeStateErrorDomain = @"JSTicTacToeStateErrorDomain";
 
 JSPlayer JSPlayerNextTurn(JSPlayer currentTurn) {
     switch (currentTurn) {

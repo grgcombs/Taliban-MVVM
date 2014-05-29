@@ -1,5 +1,5 @@
 //
-//  JSViewModel.h
+//  JSTicTacToeViewModel.h
 //  Taliban
 //
 //  Created by Jonathan Sterling on 5/28/14.
@@ -10,10 +10,13 @@
 
 @class RACAction, RACSignal;
 
-@protocol JSViewModel <JSStateMachine>
-/// playCoordinateAction : RACAction <JSCoordinate> _
-@property (readonly) RACAction *playCoordinateAction;
+@protocol JSTicTacToeViewModel <JSStateMachine>
+// include JSStateMachine where type state = <JSTicTacToeState>
+
+/// playTileAction : RACAction JSTile _
+@property (readonly) RACAction *playTileAction;
 
 /// victoriesSignal : RACSignal RACPlayer
 @property (readonly) RACSignal *victoriesSignal;
+
 @end

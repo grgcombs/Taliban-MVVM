@@ -1,5 +1,5 @@
 //
-//  JSViewState.h
+//  JSTicTacToeState.h
 //  Taliban
 //
 //  Created by Jonathan Sterling on 5/28/14.
@@ -14,18 +14,18 @@ typedef NS_ENUM(NSInteger, JSPlayer) {
     JSPlayerComputer
 };
 
-@class JSCoordinate;
+@class JSTile;
 
-@protocol JSViewState <NSObject>
+@protocol JSTicTacToeState <NSObject>
 - (JSPlayer)currentTurn;
 - (JSPlayer)winner;
 - (BOOL)gameOver;
-- (JSPlayer)playerAtCoordinate:(JSCoordinate *)coordinate;
+- (JSPlayer)playerAtTile:(JSTile *)tile;
 @end
 
-extern NSString *const JSViewStateErrorDomain;
-typedef NS_ENUM(NSInteger, JSViewStateErrorCode) {
-    JSViewStateErrorCodeInvalidPlay
+extern NSString *const JSTicTacToeStateErrorDomain;
+typedef NS_ENUM(NSInteger, JSTicTacToeStateErrorCode) {
+    JSTicTacToeStateErrorCodeInvalidPlay
 };
 
 extern JSPlayer JSPlayerNextTurn(JSPlayer currentTurn);
